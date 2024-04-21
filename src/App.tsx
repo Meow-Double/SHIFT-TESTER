@@ -1,18 +1,8 @@
-import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-
-import './App.css'
-
-const queryClient = new QueryClient({
-  defaultOptions:{
-    queries:{
-      refetchOnWindowFocus: false
-    }
-  }
-})
+import './App.css';
+import { AuthView } from './modules/auth/view';
 
 export const App = () => {
-return <QueryClientProvider client={queryClient}>
-  <ReactQueryDevtools initialIsOpen={false}/>
-</QueryClientProvider>
-}
+  return <div>
+    <AuthView />
+  </div>;
+};
