@@ -10,11 +10,20 @@
   line-height: 1.5;
   text-rendering: optimizelegibility;
 
-  --text-invert:#fff;
-  --background-brand: #2076F6;
-  --background-brand-extralight: #CEE0FF;
-  --background-hover-primary: #0852C6;
+  --text-invert: #fff;
+  --background-brand: #2076f6;
+  --background-brand-extralight: #cee0ff;
+  --background-primary: #ffffff;
+  --background-hover-primary: #0852c6;
+
+  --border-light: #cfd0d6;
+
   --btn-radius: 32px;
+
+  --background-disabled:#F2F4F5;
+
+  --text-error:#E13A4A;
+  --indicator-error:#E13A4A;
 }
 
 a {
@@ -35,14 +44,9 @@ body {
   place-items: center;
 }
 
-
 @media (prefers-color-scheme: light) {
-
   :root {
     background-color: #fff;
     color: #213547;
   }
 }
-
-
-
